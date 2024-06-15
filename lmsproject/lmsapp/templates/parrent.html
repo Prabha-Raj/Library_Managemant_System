@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMPU-Library Management System.</title>
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/rohit.css' %}" type="text/css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</head>
+
+<body>
+  <!---------------------------------------------------------header start-------------------------------------------------------------------------->
+  <div class="container-fluid">
+
+    <div class="row p-0 " style="background-color: brown;">
+      <div class="col-sm-12 p-1"></div>
+
+
+    </div>
+
+    <div class="row text-light" id="h">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4" style="margin-top: -2px; "><a href=""><i class="fa-solid fa-phone fa-shake"
+            style="color:white;"></i></a> Contactno:- 8630049758</div>
+      <div class="col-sm-4" style="margin-top: -2px;"><a href=""><i class="fa-solid fa-envelope"
+            style="color: white; margin-right: 5px;"></i></a>Email:-prabhakarrajput78824@gmial.com</div>
+      <div class="col-sm-3 pb-1" class="icon" style="margin-top: -5px;">Follow Us :-
+        <a href="https://www.youtube.com/@vlogsrohit." class="icon" target="_blank"><i class="fa-brands fa-youtube"
+            style="color: red;"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100040715531678" class="icon" target="_blank"><i
+            class="fa-brands fa-facebook" style="color: #0259ed;"></i></a>
+        <a href="https://www.instagram.com/rohitvlog863/" class="icon" target="_blank"><i class="fa-brands fa-instagram"
+            style="color: #d24bc2;"></i></a>
+        <a href="#" class="icon" target="_blank"><i class="fa-brands fa-twitter" style="color: #1f66e0;"></i></a>
+      </div>
+    </div>
+
+    <!----------------------------------------------------------------Header End------------------------------------------------------------------->
+
+
+    <!----------------------------------------------------------------header logo & name--------------------------------------------------->
+
+    <div class="row" id="logob">
+      <div class="col-sm-2">
+        <img src="{% static 'images/logo.jpg' %}" alt="" id="logo">
+      </div>
+      <div class="col-sm-10">
+        <h1 id="tmbu">Tilka Manghi Bhagalpur University (Bihar)</h1>
+      </div>
+    </div>
+
+    <!-----------------------------------------------------------------header logo end------------------------------------------------------>
+
+
+    <!----------------------------------------------------------------Navbar Start----------------------------------------------------------------->
+    <div class="row bg-light sticky-top">
+      <div class="col-sm-12 p-0" id="nav">
+        <nav class="navbar navbar-expand-lg   m-0 p-0">
+          <div class="container-fluid   m-0 p-0">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-0 mb-lg-0" id="ul">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Library Management System</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'lmsapp:index' %}" style="margin-left: 60px;"><i
+                      class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'lmsapp:aboutus' %}" style="margin-left: 10px;">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'lmsapp:registration'%}" style="margin-left: 5px;"><i
+                      class="fa-solid fa-user"></i> Registration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'lmsapp:login'%}" style="margin-left: 5px;"><i
+                      class="fa-solid fa-key"></i> Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'lmsapp:contactus'%}" style="margin-left: 20px;"><i
+                      class="fa-solid fa-phone "></i> ContactUs</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!------------------------------------------------------Nav bar End--------------------------------------------------------------------->
+
+    <!------------------------------------------------------Marquee start------------------------------------------------------------------>
+    <div class="row bg-dark">
+      <div class="col-sm-12">
+        <marquee behavior="" direction="left" scrollamount="5" onmouseover="stop()" onmouseout="start()" id="marq"
+          style="margin:0px 50px 0px 50px;">
+          <img src="{% static 'images/new.jpg' %}" alt="" style="height: 35px; width: 55px;"><a
+            href="https://nad.gov.in/">National Depository Academic (N.A.D) </a>
+          <img src="{% static 'images/new.jpg' %}" alt="" style="height: 35px; width: 55px;"><a
+            href="https://www.education.gov.in/">Ministry of Human Resource Devlopment</a>
+          <img src="{% static 'images/new.jpg' %}" alt="" style="height: 35px; width: 55px;"> <a
+            href="https://www.ugc.gov.in/">University Grant Communication (U.G.C)</a>
+
+        </marquee>
+      </div>
+    </div>
+
+
+
+    <!---------------------------------------------------------Marquee End------------------------------------------------------------------>
+
+    <!-------------------------------------------------------Slider Start------------------------------------------------------------------->
+
+
+    <!------------------------------------------------------------Slider End---------------------------------------------------------------->
+
+    <!-------------------------------------------------------------Body Start-------------------------------------------------------------->
+    <div class="row mt-2">
+      {% block main %}
+
+      {% endblock main %}
+
+    </div>
+    <!-----------------------------------------------------------------Body End----------------------------------------------------------------->
+
+
+
+    <!-----------------------------------------------------Start Footer---------------------------------------------------------------------->
+    <div class="row" style="background-color:black;">
+      <div class="col-sm-4" style="min-height: 450px; display: flex;
+      justify-content: center; align-items: center; flex-direction: column;">
+        <img src="{% static 'images/logo.jpg' %}" alt="" id="flogo">
+        <h5 class="para"><i class="fa-regular fa-star"></i>
+          The Tilka Manjhi Bhagalpur University, also known as Bhagalpur University, is a premier institution for
+          providing higher education in
+          the state of Bihar. The university is situated in Bhagalpur town of Bihar State in India and is named after
+          famous freedom fighter Tilka Manjhi.
+          Established on 12 July 1960,it is a public university sprawled within 264 acres of lush green campus ideal for
+          teaching and learning. </h5>
+      </div>
+
+      <div class="col-sm-4 mt-5"
+        style="min-height: 450px; align-items: center; display:flex; justify-content: center; flex-direction: column;">
+        <h2 id="link">Important Link :-</h2>
+        <hr style=" color: white;">
+        <form action="">
+          <table>
+            <ul id="ful">
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="http://online.tdcollege.org/" target="_blank">Tilak Dhari P.G College</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="https://vbspu.ac.in/en" target="_blank">Veer Bahadur Singh Purvanchal U. Jaunpur</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="https://www.sarkariresult.com/" target="_blank">Sarkari result</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="https://www.education.gov.in/" target="_blank">Ministry of Human Resource Devlopment</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="http://epgp.inflibnet.ac.in/" target="_blank">e-PG Pathshala</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="https://spoken-tutorial.org/" target="_blank">Spoken Tutorial</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="https://nad.gov.in/" target="_blank">National Academic Depository (NAD)</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="https://swayam.gov.in/" target="_blank">SWAYAM Portal</a></li>
+              <li><i class="fa-solid fa-circle-check fa-beat-fade" style="color:rgb(231, 47, 47);"></i><a
+                  href="https://www.ugc.gov.in/" target="_blank">University Grant Communication (U.G.C)</a></li>
+            </ul>
+          </table>
+        </form>
+
+      </div>
+
+      <div class="col-sm-4 mt-5"
+        style="min-height:450px; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="row ">
+          <div class="col-sm-12 mt-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.64328201895!2d86.95527707528305!3d25.248937077677656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f04a742f137b4f%3A0xf7ae40a61d2c0a46!2sTilka%20Manjhi%20Bhagalpur%20University!5e0!3m2!1sen!2sin!4v1694772139155!5m2!1sen!2sin"
+              style="border:0;  border-radius: 15px 15px 0px 15px; height:100%; width: 100%; box-shadow: 5px 5px 15px white; border:1px solid #000;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!------------------------------------------------------End Footer---------------------------------------------------------------------->
+
+    <!-------------------------------------------------------Copyright start---------------------------------------------------------------->
+    <div class="row bg-dark">
+      <div class="col-am-12 text-center" style="background-color: rgb(231, 47, 47);">
+        <p style="font-family: cambria; font-size: 15px;" class="text-center">Copyright &nbsp; &copy;2023 Reserved By
+          Er. Prabhakar rajput</p>
+        <h6 style="font-family: cambria;">Follow Us :- 
+          <a href="https://www.instagram.com/coding_lover_boy_2.0"><i class="fa-brands fa-instagram mx-2"></i></a>
+          <a href="https://www.facebook.com/profile.php/?id=100057055627269"><i class="fa-brands fa-facebook mx-2"></i></a> 
+        </h6>
+      </div>
+
+    </div>
+
+
+    <!-------------------------------------------------------Copyright end------------------------------------------------------------------->
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+
+
+</html>

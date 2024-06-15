@@ -1,0 +1,37 @@
+{% extends "adminparent.html" %}
+{% block body %}
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align:center;">Return Book List</h1>
+            <div class="col-sm-12" style="overflow-x: scroll;">
+                <table class="table table-bordered text-light">
+                    <tr>
+                        <th>Issue Id</th>
+                        <th>Book Id</th>
+                        <th>ISBN No</th>
+                        <th>Book Name</th>
+                        <th>Author Name</th>
+                        <th>Roll NO</th>
+                        <th>Name</th>
+                        <th>Issue Date</th>
+                        <th>Due Date</th>
+                    </tr>
+                    {% for b in book %}
+                        <tr>
+                            <td>{{b.id}}</td>
+                            <td>{{b.bookid}}</td>
+                            <td>{{b.isbnno}}</td>
+                            <td>{{b.bookname}}</td>
+                            <td>{{b.authorname}}</td>
+                            <td>{{b.rollno}}</td>
+                            <td>{{b.name}}</td>
+                            <td>{{b.issuedate}}</td>
+                            <td>{{b.duedate}}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            
+            </div>   
+        </div>
+    </div>
+{% endblock body %}

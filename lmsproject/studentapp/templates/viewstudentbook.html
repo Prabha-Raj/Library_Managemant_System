@@ -1,0 +1,35 @@
+{% extends "studentparent.html" %}
+{% block body %}
+<div class="container-fliud">
+    
+  <div class="row mt-3 p-5 rounded" style="background:linear-gradient(rgba(157, 157, 157, 0.789),rgba(0,0,0,0.3),rgba(1, 27, 83, 0.922)) ;">
+      <div class="col-sm-10 mx-auto" style="overflow-y:hidden;overflow-x: auto; scrollbar-width: none;" >
+         <h2 style="text-align: center; color: yellow; text-shadow: 3px 3px 5px red; font-family: cursive;">View Your Issued Book</h2> 
+        <table class="table table-bordered">
+            <tr>
+                <th>Book Id</th>
+                <th>Subject</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Issued Date</th>
+                <th>Due Date</th>
+                <th>Status</th>
+            </tr>
+            {% for b in book %}
+                <tr>
+                    <td>{{b.bookid}}</td>
+                    <td>{{b.subject}}</td>
+                    <td>{{b.bookname}}</td>
+                    <td>{{b.authorname}}</td>
+                    <td>{{b.issuedate}}</td>
+                    <td>{{b.duedate}}</td>
+                    <td>{{b.status}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+      </div>
+  </div>
+</div>
+
+
+{% endblock body %}

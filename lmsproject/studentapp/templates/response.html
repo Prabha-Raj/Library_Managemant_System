@@ -1,0 +1,49 @@
+{% extends "studentparent.html" %}
+{% block body %}
+{% if messages%}
+    {% for message in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>{{message}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+<h1 style="text-align: center;">Submit Your Complain or Feedback.</h1>
+<form class="form-group" method="post"action="{% url 'studentapp:response' %}">
+    {% csrf_token %}
+    <table class="table" style="width: 70%;margin: auto;">
+    <tr>
+        <td>Select Response Type</td>
+        <td>
+            <select name="responsetype">
+                <option selected>--Select Responce--</option>
+                <option value="feedback">Feedback</option>
+                <option value="complain">Complaint</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Enter Subject</td>
+        <td>
+            <input type="text" name="subject" class="form-control"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Enter Renponse Text</td>
+        <td>
+            <textarea name="responsetext" class="form-control"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </td>
+    </tr>
+    
+    
+    </table>
+</form>
+
+
+{% endblock body %}

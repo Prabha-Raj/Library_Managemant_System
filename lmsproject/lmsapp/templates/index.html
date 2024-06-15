@@ -1,0 +1,188 @@
+{% extends "parrent.html" %}
+{% load static %}
+
+{% block main %}
+<div class="container-fluid p-0 m-0">
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="{% static 'images/r1.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+    </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/s1.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/s3.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+
+<!-- -----------------------------------------------------------chancellor ----------------------------------------------------------------------- -->
+
+<div class="row mt-5" style="display: flex; justify-content:center; position: relative; align-items: center; margin: auto; width: 90%;" >
+  <div class="col-sm-4 mt-2">
+    <div class="col-sm-12 cname font">Chancellor's Message</div>
+    <img src="{% static 'images/chancellor.jpg' %}" alt="" class="cphoto" >
+    <div class="col-sm-12 cfoot" style="text-align: center;">
+        <div class="fpost">Chancellor</div>
+        <div class="fcname">Shri Rajendra Vishwanath Arlekar</div>
+        <div class="fcbtn"><a href="#">Know More</a></div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 mt-2">
+    <div class="col-sm-12 cname font">Vice Chancellor's Message</div>
+    <img src="{% static 'images/v_chancellor.jpg' %}" alt="" class="cphoto">
+    <div class="col-sm-12 cfoot" style="text-align: center;">
+      <div class="fpost">Vice Chancellor</div>
+      <div class="fcname">Prof. (Dr.) Jawahar Lal</div>
+      <div class="fcbtn"><a href="#">Know More</a></div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 mt-2">
+    <div class="col-sm-12 cname font">Pro Vice Chancellor's Message</div>
+    <img src="{% static 'images/p_v_chancellor.jpg' %}" alt="" class="cphoto">
+    <div class="col-sm-12 cfoot" style="text-align: center;">
+      <div class="fpost">Pro Vice Chancellor</div>
+      <div class="fcname">Prof. Ramesh Kumar</div>
+      <div class="fcbtn"><a href="#">Know More</a></div>
+    </div>
+  </div>
+ 
+</div>
+<!-- ------------------------------------------------------------------chancellor end-------------------------------------------------------------- -->
+
+<!-- --------------------------------------------------------------------About us start------------------------------------------------------------- -->
+<div class="row">
+  <div class="col-sm-12" style="width: 85%; margin: auto;">
+    <h5 class="f"><b>About Us</b></h5>
+    <h2 class="ff">Tilka Manghi Bhagalpur University</h2>
+    <br>
+    <p style="font-family: cambria; font-size: 20px;">The Tilka Manjhi Bhagalpur University, 
+      also known as Bhagalpur University, is a premier institution for providing higher education
+       in the state of Bihar. The university is situated in Bhagalpur town of Bihar State in India and is
+        named after famous freedom fighter Tilka Manjhi. Established on 12 July 1960, it is a public university
+         sprawled within 264 acres of lush green campus ideal for teaching and learning. The university has 6 Faculties,
+          34 Teaching Departments, 5 Research Centres and 12 Constituent Colleges, besides affiliated to it 11 Colleges and 14 B.Ed. Colleges.
+     </p>
+     <button type="submit" class="btn btn-outline-danger">Read More</button>
+  </div>
+</div>
+
+
+<!-- ----------------------------------------------------------------------Aboutusend-------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------notice circular news trends--------------------------------------------------- -->
+
+<!-- <div class="row">
+<div class="col-sm-6" style="min-height:650px; margin: auto;">
+  <h1>
+    Notices
+  </h1>
+
+</div>
+<div class="col-sm-6"></div>
+</div> -->
+<!-- -------------------------------------------------------------------end ncnt------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------quick link-------------------------------------------------------------------- -->
+<div class="row ql ">
+  <div class="col-sm-1"></div>
+<div class="col-sm-5 mt-5" style=" min-height:650px; margin: auto;">
+  <div class="row">
+    <div class="col-sm-3">
+  <h3 style="color: rgb(231, 47, 47);font-family: cambria;">Links</h3>
+  <h2 style="font-family: cambria;">Quick Link </h2>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000; "></i> Circular</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> Anti Ragging</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> Recruitment</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> Holidays-list</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> Publications</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> Download</a></h5>
+</div>
+
+<div class="col-sm-5 ms-5" style="margin-top: 123px;">
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> Photo gallery</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> RTI</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> SSR</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> ALUMNI LOGIN</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> IQAC-Members</a></h5>
+  <h5 class="ifont mt-3 fl"><a href="#"><i class="fa-solid fa-circle-check" style="color: #ff0000;"></i> Stydent Grievances Cell</a></h5>
+</div>
+</div>
+<div class="row mt-3">
+  <div class="col-sm-3 qlbox "><h4><i class="fa-solid fa-graduation-cap" style="color: black; font-size: 40px; text-shadow: 2px 2px 5px white;"></i> FACILITIES FOR STUDENT AT TMBU</h4></div>
+  <div class="col-sm-3 qlbox" style="margin-left: 5vw;"><h4> ONLINE GRIEVANCE CELL</h4></div>
+</div>
+<div class="row mt-3 ">
+  <div class="col-sm-3 qlbox"><h4>ONLINE CERTIFICATE REQUEST</h4></div>
+  <div class="col-sm-3 qlbox" style="margin-left: 5vw;"><h4>ONLINE DEGREE DASHBOARD</h4></div>
+</div>
+</div>
+
+<!-- -------------------------------------------------------slider start------------------------------------------------------------------------- -->
+
+<div class="col-sm-6" style="justify-content: center; align-items: center; display: flex; flex-direction: column;" >
+
+ <div id="carouselExampleIndicators" class="carousel slide" style=" width: 75%;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="border: 1px solid red; box-shadow: 2px 2px 5px black;">
+      <div class="carousel-item active">
+        <img src="{% static 'images/s1.jpg' %}" class="d-block w-100  " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/r1.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/s3.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+</div>
+
+<!--------------------------------------------------------------------quick link----------------------------------------------------------------------->
+
+{% endblock main %}
+    
+
